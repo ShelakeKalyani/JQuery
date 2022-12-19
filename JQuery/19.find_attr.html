@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find Attribute</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<a href="https://google.com" id="My_tag">open</a>
+
+	<button id="change_fb">CHANGE TO FACEBOOK</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#change_fb").click(function(){
+
+				//Fetch Attribute
+				var link = $("#My_tag").attr("href");
+				alert(link);
+
+				//Change Attribute
+				$("#My_tag").attr("href","http://facebook.com");
+
+
+			})
+		})
+	</script>
+
+</body>
+</html>

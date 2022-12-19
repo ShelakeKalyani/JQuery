@@ -1,0 +1,54 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Fade
+Date 		   = 07-12-2022
+Technology Used = HTML,JQuery,CSS
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fade</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		#box_div{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			float: left;
+		}
+	</style>
+
+</head>
+<body>
+
+	<button id="box1">Box1</button>
+	<button id="box2">Box2</button><br><br>
+	<div id="box_div"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#box1").click(function(){
+				$("#box_div").fadeIn();             //show
+				// $("#box_div").fadeOut();			   //hode
+				// $("#box_div").fadeToggle();		       //toggle
+				// $("#box_div").fadeTo('slow',0.3);   //0.3 = opacity
+
+			})
+
+			$("#box2").click(function(){
+				// $("#box_div").fadeIn();             //show
+				// $("#box_div").fadeOut();			   //hode
+				// $("#box_div").fadeToggle();		       //toggle
+				$("#box_div").fadeTo('slow',0.3);   //0.3 = opacity
+
+			})
+		});
+	</script>
+
+</body>
+</html>

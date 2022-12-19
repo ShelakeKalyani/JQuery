@@ -1,0 +1,56 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Animate
+Date 		   = 07-12-2022
+Technology Used = HTML,JQuery,CSS
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<title>Animate</title>
+
+	<style type="text/css">
+		#Box{
+			height: 100px;
+			width: 100px;
+			position: absolute;			/*neccesary because of by default position is static(Cannot move)*/
+			background-color: red;
+			top: 50px;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="Box"></div>
+	<button id="btn_move">Move</button>
+
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+			$("#btn_move").click(function(){
+				$("#Box").animate({left:'50%'},5000);	//It will take 5 sec for reach 50% at left
+				$("#Box").animate({left:'20%','border-radius':'50%'});
+				$("#Box").animate({top:'70%'});
+				$("#Box").animate({left:'50%'});
+				$("#Box").fadeOut();
+
+				
+				// $("#Box").animate({
+				// 	left:'250px',
+				// 	height: '+=150px',
+				// 	width: '+=150px'
+				// });
+
+			});
+		});
+	</script>
+
+</body>
+</html>

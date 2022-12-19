@@ -1,0 +1,190 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = find two random number set first random number for left side and second random at top 					side and set circle at this position.
+Date 		   = 08-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Place Div</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.main1{
+			height: 400px;
+			width: 400px;
+			border: 1px solid black;
+			position: relative;
+			overflow: hidden;
+		}
+		#circle{
+			height: 70px;
+			width: 70px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+
+	<button id="click_me">Click</button>
+	<div class="main1" id="outerdiv">
+		<div id="circle"></div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#click_me").click(function(){
+				var lt = parseInt(Math.random()*400);   //left
+				var tp = parseInt(Math.random()*400);	//top
+				var color = ['red','orange','blue','green','cyan','violet','yellow','lime','gray','pink'];
+				var random_arr_color = parseInt(Math.random()*10);
+
+				var newcircle = `<div id="circle" style="left:${lt}px;top:${tp}px;background-color:${color[random_arr_color]};"></div>`
+
+				$("#outerdiv").append(newcircle);
+			});
+
+		});
+	</script>
+
+</body>
+</html> -->
+
+
+<!-- Per sec 3 div automatically -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Place Div</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.main1{
+			height: 400px;
+			width: 400px;
+			border: 1px solid black;
+			position: relative;
+			overflow: hidden;
+		}
+		.circle{
+			height: 70px;
+			width: 70px;
+			background-color: red;
+			border-radius: 50%;
+			position: absolute;
+		}
+	</style>
+
+</head>
+<body>
+
+	<button id="click_me">Click</button>
+	<div class="main1" id="outerdiv">
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			setInterval(function(){
+				var lt = parseInt(Math.random()*400);   //left
+				var tp = parseInt(Math.random()*400);	//top
+				var color = ['red','orange','blue','green','cyan','violet','yellow','lime','gray','pink'];
+				var random_arr_color = parseInt(Math.random()*10);
+
+				var newcircle = `<div class="circle" style="left:${lt}px;top:${tp}px;background-color:${color[random_arr_color]};"></div>`
+
+				$("#outerdiv").append(newcircle);
+
+				$(".circle").animate({'top':"-220px"})
+				// $(".circle").animate({'bottom':"500px"})
+				$(".circle").animate({'bottom':"50px"})
+				$(".circle").animate({'top':"350px"})
+				// $(".circle").animate({'top':"100px"})
+				$(".circle").animate({'bottom':"200px"})
+
+
+			},500)
+
+
+		});
+	</script>
+
+</body>
+</html -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Place Div</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.main1{
+			height: 600px;
+			width: 100%;
+			/*border: 1px solid black;*/
+			position: relative;
+			overflow: hidden;
+		}
+		.circle{
+			height: 100px;
+			width: 100px;
+			/*background-color: red;*/
+			border-radius: 50%;
+			position: absolute;
+			/*box-shadow: 3px 3px 2px black;*/
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="main1" id="outerdiv">
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+				var color = ['red','orange','blue','green','cyan','violet','yellow','lime','gray','pink'];
+
+				setInterval(function()
+				{
+					var random_arr_color = parseInt(Math.random()*10);
+
+					var lt = parseInt(Math.random()*1050);   //left
+					var tp = 600;	//top
+
+					var newcircle = `<div class="circle" style="left:${lt}px;top:${tp}px;background-color:${color[random_arr_color]};"></div>`
+
+					$("#outerdiv").append(newcircle);
+
+					$(".circle").animate({'top':"-220px"},2000);
+
+
+				},100);
+
+
+		});
+	</script>
+
+</body>
+</html

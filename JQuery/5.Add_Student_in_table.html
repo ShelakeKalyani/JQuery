@@ -1,0 +1,55 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Add students data in table.
+Date 		   = 06-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Student</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<input type="text" id="uName">
+	<input type="text" id="uMobile">
+	<input type="text" id="uEmail"><br><br>
+
+	<button id="add_student">ADD</button><br><br>
+
+	<table border="1" width="100%" id="student_table">
+		<tr>
+			<th>Name</th>
+			<th>Mobile</th>
+			<th>Email</th>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#add_student").click(function(){
+				var UserName = $('#uName').val();
+				var UserMobile = $('#uMobile').val();
+				var Usermail = $('#uEmail').val();
+
+		       var tr = `<tr>
+		       				<td>${UserName}</td>
+		       				<td>${UserMobile}</td>
+		       				<td>${Usermail}</td>
+		                 </tr>`;
+		                 
+		        $('#student_table').append(tr);
+
+			})
+		})
+	</script>
+
+
+</body>
+</html>

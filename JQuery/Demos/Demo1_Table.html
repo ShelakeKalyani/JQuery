@@ -1,0 +1,134 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Product table.
+Date 		   = 07-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>Product Table</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+ </head>
+ <body>
+
+ 	<table id="Table_pro">
+		<tr>
+			<th>Product Name</th>
+			<th>Quantity</th>
+			<th>Rate</th>
+			<th>Total</th>
+			<th></th>
+		</tr>
+
+		<tr>
+			<td>
+				<input type="text" class="product_name">
+			</td>
+			<td>
+				<input type="text" class="product_qty" onkeyup="getprice()">
+			</td>
+			<td>
+				<input type="text" class="product_rate" onkeyup="getprice()">
+			</td>
+			<td>
+				<input type="text" class="product_total" readonly>
+			</td>
+			<td><button id="addRow">+</button></td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		function getprice()
+		{
+			    var pq = $(".product_qty");
+				var pr = $(".product_rate");
+				var pt = $(".product_total");
+
+				for(i=0;i<pq.length;i++)
+				{
+					var ptotal = pq[i].value*pr[i].value;
+					pt[i].value = ptotal;
+				}
+		}
+
+		$(document).ready(function(){
+
+			$("#addRow").click(function(){
+				var tr = `<tr>
+							<td>
+								<input type="text" class="product_name">
+							</td>
+							<td>
+								<input type="text" class="product_qty" onkeyup="getprice()">
+							</td>
+							<td>
+								<input type="text" class="product_rate" onkeyup="getprice()">
+							</td>
+							<td>
+								<input type="text" class="product_total" readonly>
+							</td>
+							<td><button onclick="removeRow(this)" style="background-color:red">X</button></td>
+						</tr>`;
+				 $("#Table_pro").append(tr);
+			});
+		})
+
+		function removeRow(elmt)
+		{
+ 			elmt.closest('tr').remove();
+		}
+	</script>
+ 
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

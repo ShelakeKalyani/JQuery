@@ -1,0 +1,51 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Append,prepend,before,after ,empty and remove
+Date 		   = 12-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Append Prepend</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<input type="text" name="" id="inp1">
+	<button id="btn">ADD</button>
+
+	<div id="particles">
+		Hello
+		<!-- <span>Hii</span> -->
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#btn").click(function(){
+				var inp = $("#inp1").val()
+
+//**************Append and Prepend*************
+				// $("#particles").append(inp+" ");					//last la element add
+				// $("#particles").prepend(inp+" ");				//start la element add
+
+//**************Before and After*************
+				// $("#particles").before(inp);   //inp mdhle text already aslelya text chya adhi add 											hote
+				// $("#particles").after(inp);	//inp mdhle text already aslelya text chya nantar add 											hote
+
+//**************Empty and Remove*************
+				$("#particles").empty(inp); 			//particles che atle content empty hotat
+				// $("#particles").remove(inp); 		   //particles jyacha id ahe to whole tag remove hoto
+
+			})
+		});
+	</script>
+
+</body>
+</html>

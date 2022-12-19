@@ -1,0 +1,37 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Simple basic JQuery Code.
+Date 		   = 06-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Jquery</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+</head>
+
+<body>
+	<input type="text" id="inp1">
+
+	<button onclick="sayHi()">Submit</button><br><br>
+
+	<input type="text" class="inp2">
+	<input type="text" class="inp2">
+	<button onkeyup="sayHi()">Submit</button><br><br>
+
+	<script type="text/javascript">
+		function sayHi()
+		{
+			// var v1 = document.getElementById('inp1').value;
+			// alert(v1);
+
+			var v1 = $("#inp1").val();
+			alert(v1);
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Say Hii and Say Bye on click;
+Date 		   = 08-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<title>Say Hii and Bye</title>
+</head>
+<body>
+
+	<input type="text" name="" id="inp1">
+	<button id="Hii">Say Hii</button>
+	<button  id="Bye">Say Bye</button>
+
+	<script type="text/javascript">
+
+		// function Hii()
+		// {
+		// 	var a = document.getElementById('inp1').value;
+		//     var msg = "Hii"+" "+a;
+		//     alert(msg);
+		// }
+
+		// function Bye()
+		// {
+		// 	var a = document.getElementById('inp1').value;
+		//     var msg = "Bye"+" "+a;
+		//     alert(msg);
+		// }
+
+
+
+		$(document).ready(function(){
+			$("#Hii").click(function(){
+				// var a = document.getElementById('inp1').value;
+				$a = $("#inp1").val();
+		    	 $msg = "Hii"+" "+$a;
+		    	alert($msg);
+			})
+
+			$("#Bye").click(function(){
+				// var a = document.getElementById('inp1').value;
+				$a = $("#inp1").val();
+		    	 $msg = "Bye"+" "+$a;
+		    	alert($msg);
+			})
+		});
+
+	</script>
+
+
+</body>
+</html>

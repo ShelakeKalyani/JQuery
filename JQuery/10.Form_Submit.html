@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<form id="myForm">
+		<input type="text" name="username" placeholder="Username" id="Uname"> 
+		<input type="text" name="usermobile" placeholder="Usermobile" id="UMobile">
+		<button>Submit</button>	
+	</form>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#myForm').submit(function(event){
+
+				event.preventDefault(0);
+				var User_Name = $("#Uname").val();
+				var User_Mobile = $("#UMobile").val();
+
+				if(User_Name!="" && User_Mobile!="")
+				{
+					document.getElementById("myForm").submit();
+				}
+				else
+				{
+
+				}
+
+			});
+		});
+	</script>
+
+</body>
+</html>

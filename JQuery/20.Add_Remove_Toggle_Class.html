@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<title>Class Functions</title>
+	<style type="text/css">
+		.New_Box{
+			height: 200px;
+			width: 200px;
+			float: left;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<button id="mybtn">Add</button>
+	<button id="mybtn2">Remove</button>
+	<button id="mybtn3">Toggle</button><br><br><br>
+
+	<div id="Box1"></div>
+	<div id="Box2"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mybtn").click(function(){
+				$("#Box1").addClass("New_Box")
+			});
+
+		$("#mybtn2").click(function(){
+			$("#Box1").removeClass("New_Box")
+		})
+
+		$("#mybtn3").click(function(){
+			$("#Box1").toggleClass("New_Box")
+		})
+			
+		});
+	</script>
+</body>
+</html>

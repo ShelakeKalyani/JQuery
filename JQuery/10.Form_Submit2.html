@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<form id="myForm">
+		<input type="text" name="username" placeholder="Username" id="Uname" class="formfield"> 
+		<input type="text" name="usermobile" placeholder="Usermobile" id="UMobile" class="formfield">
+		<button disabled id="myBtn">Submit</button>	
+	</form>
+
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$(".formfield").keyup(function(){
+
+				var error = 0;
+
+				var User_Name = $("#Uname").val();
+				if(User_Name.length==0)
+				{
+					$("#Uname").css("border","5px solid red");
+					error++;
+				}
+
+				var User_Mobile = $("#UMobile").val();
+				if(User_Mobile.length!=10)
+				{
+					$("#UMobile").css({
+										"border":"5px solid red",
+						               "color":"blue",
+						               "box-shadow":"0px 0px 10px 0px black"}
+						      );
+
+					error++;
+				}
+
+				if(error==0)
+				{
+					console.log("Valid Detail.");
+					$("#myBtn").removeAttr('disabled','');
+
+				}
+				else
+				{
+					console.warn("Invalid Detail.");
+				}
+
+			})
+		});
+	</script>
+
+</body>
+</html>

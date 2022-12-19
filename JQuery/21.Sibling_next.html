@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sibling and Next</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+</head>
+<body>
+
+	<div>
+		<h1 id="myh1">Hello H1</h1>
+		<h2>Hello H2</h2>
+		<h3>Hello H3</h3>
+		<h2 class="myh2">Hello H2 - 2</h2>
+	</div>
+
+	<button id="mybtn">Click</button>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mybtn").click(function(){
+				// $("#myh1").siblings().css('background-color','yellow');        //myh1 id chya closest tag la facility apply
+
+				
+				// $("#myh1").siblings('.myh2').css('background-color','yellow');	//jr specific sibling la facility 																		apply karaychi asel tr
+
+				$("#myh1").next().css('background-color','yellow');			//myh1 chya next nantar jo tag ahe 																		tyala facility apply
+				// $("#myh1").next().next().css('background-color','red');
+
+
+
+			});
+		});
+	</script>
+
+</body>
+</html>

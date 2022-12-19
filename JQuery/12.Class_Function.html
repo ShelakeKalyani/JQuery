@@ -1,0 +1,54 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = 
+Date 		   = 12-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class Function</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.mydiv{
+			height: 150px;
+			width: 150px;
+			background-color: violet;
+			border-radius: 50%;
+		}
+	</style>
+
+</head>
+<body>
+	<button id="Removebtn">Remove</button>
+	<button id="Addbtn">Add</button>
+	<button id="Togglebtn">Toggle</button>
+
+	<div class="mydiv" id="circle"></div>
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#Removebtn").click(function(){
+				$("#circle").removeClass('mydiv');
+			});
+
+			$("#Addbtn").click(function(){
+				$("#circle").addClass('mydiv');
+			});
+
+			$("#Togglebtn").click(function(){
+				$("#circle").toggleClass('mydiv');
+			});
+		});
+	</script>
+
+</body>
+</html>

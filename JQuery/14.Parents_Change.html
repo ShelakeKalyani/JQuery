@@ -1,0 +1,41 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = 
+Date 		   = 12-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parents</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+
+</head>
+<body>
+
+	<table width="100%">
+		<tr>
+			<td>
+				<button id="mybtn">Remove</button>
+			</td>
+		</tr>
+	</table>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mybtn").click(function(){
+				// $("#mybtn").parents().css("background-color","red");
+				$("#mybtn").parents('table').css("background-color","red");
+				// $("#mybtn").parents('tr').append("<td>Welcome</td>");
+				$("#mybtn").parents('table').css("width","50%");
+			})
+		});
+	</script>
+
+</body>
+</html>

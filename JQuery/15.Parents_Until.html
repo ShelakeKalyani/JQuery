@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parents Until</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+
+	<style type="text/css">
+		.div1,.h31,span
+		{
+			padding: 10px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="div1">
+		<h3 class="h31">
+			<span>
+				<button id="myBtn">Color</button>
+			</span>
+		</h3>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#myBtn").click(function(){
+				$(this).parentsUntil('div').css("background-color","violet");   //this means it refers 																	to myBtn id
+			});
+		});
+	</script>
+
+</body>
+</html>

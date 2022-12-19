@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<title>Stop</title>
+
+	<style type="text/css">
+		#Box{
+			height: 500px;
+			width: 200px;
+			float: left;
+			background-color: red;
+			display: inline;
+		}
+	</style>
+</head>
+<body>
+
+	<button id="btn1">Start</button>
+	<button id="btn2">Stop</button><br><br>
+	<div id="Box" style="display:none;"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn1').click(function(){			//here click is callback function
+				$("#Box").slideDown(3000);
+			});
+
+			$('#btn2').click(function(){
+				$("#Box").stop();
+			});
+		});
+	</script>
+
+</body>
+</html>

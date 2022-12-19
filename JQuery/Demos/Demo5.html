@@ -1,0 +1,46 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = 
+Date 		   = 08-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Demo-4</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		#box1{
+			height: 300px;
+			width: 300px;
+			border: 1px solid black;
+			margin-top: 20px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<textarea cols="40" rows="10" id="text_msg"></textarea>
+	<div id="box1"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#text_msg").keyup(function(){
+				var msg = $("#text_msg").val();
+				// var val1 = msg.split("").join("<br>");
+				// $("#box1").html(msg);                     //html chya facility apply hotat like h1 tag
+				$("#box1").text(msg);						// only text write hote
+
+
+			});
+		});
+	</script>
+
+</body>
+</html>

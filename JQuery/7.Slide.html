@@ -1,0 +1,46 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Slide
+Date 		   = 07-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slide</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		#box_div{
+			height: 100px;
+			width: 100px;
+			background-color: red;
+			float: left;
+			display: inline;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<button id="Btn1">Btn1</button>
+	<div id="box_div" style="display:none;"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#Btn1").click(function(){
+				$("#box_div").slideUp('slow');
+				// $("#box_div").slideDown('slow');
+				$("#box_div").slideToggle('slow');
+
+			})
+		});
+	</script>
+
+</body>
+</html>

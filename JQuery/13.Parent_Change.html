@@ -1,0 +1,54 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = 
+Date 		   = 12-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Parent</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.div0{
+			background-color: blue;
+			padding: 10px;
+		}
+		.div1{
+			background-color: red;
+			padding: 10px;
+		}
+		.div2{
+			background-color: violet;
+
+		}
+	</style>
+
+</head>
+<body>
+<div class="div0">
+	<div class="div1">
+		<div class="div2" id="mydiv2">
+			Hii
+		</div>
+	</div>
+</div>
+	
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mydiv2").click(function(){
+				$("#mydiv2").parent().css("background-color","green");
+				$("#mydiv2").parent().parent().css("background-color","cyan");
+
+			});
+		});
+	</script>
+
+</body>
+</html>

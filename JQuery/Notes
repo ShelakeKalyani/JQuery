@@ -1,0 +1,95 @@
+###########Date = 06-12-2022###########
+
+Framework ---> given things nusar crerate krne
+
+Library ---> Jithe garaj padel tithe use
+
+
+JQuery -->
+library of JS
+founder = John Resig
+why found jquery = 
+
+
+
+minified = smjat nasel asa code
+unminified = smjel asa /short /sutsutit
+
+
+Access value by using id,class
+.propertyName
+.functionName()
+
+where use value and val()
+
+$(document).ready(function()){
+	
+}  ---> page load zalyananatr to fun mdla code execute
+
+hide --> display = none
+
+
+$(".inp1").hide();
+$(".inp1").show();
+$(".inp1").toggle();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+08-12-2022
+
+HTML Entity --->
+         Start with "&" and end with ;
+&nbsp --->  for space
+&lt ----> less than sign --->  "<"
+&gt ----> greater than sign --->  ">"
+
+
+
+
+JS entity ---->
+
+&#8377 ----> Rs. sign
+&copy  ----> copy-write symbol
+&hearts ---> Hear Symbol
+
+
+
+// $("#box1").html(msg);                     //html chya facility apply hotat like h1 tag
+				$("#box1").text(msg);						// only text write hote
+
+
+
+
+
+
+[
+	{emp_name:'abcd',salary:40000,age:35},
+]
+salary>50000
+age>38
+
+
+
+
+
+
+
+
+
+
+
+
+

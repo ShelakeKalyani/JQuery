@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+	<script src="https://kit.fontawesome.com/33042e1aad.js" crossorigin="anonymous"></script>
+
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/> -->
+
+	<style type="text/css">
+		.menu_bar{
+			height: 60px;
+			width: 100%;
+			background-color: cyan;
+		}
+		.icon{
+			font-size: 30px;
+			/*margin-top: 14px;*/
+			float: right;
+			/*margin-right: 30px;*/
+			padding: 10px;
+		}
+
+		.Box{
+			height: 150px;
+			width: 100%;
+			background-color: red;
+		}
+		.d-none{
+			display: none;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<button id="mybtn">
+		<i class="fa-solid fa-bars icon" id="menu_icon"></i>
+	</button>
+
+	<div class="Box d-none"></div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#mybtn").click(function(){
+				$("#menu_icon").toggleClass('fa-bars');
+				$("#menu_icon").toggleClass('fa-xmark');
+				$(".Box").toggleClass('d-none');
+
+			});
+		});
+	</script>
+
+</body>
+</html>

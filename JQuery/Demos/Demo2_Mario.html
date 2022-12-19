@@ -1,0 +1,58 @@
+<!-- 
+Developer Name = Shelake Kalyani
+Program name   = Mario Game
+Date 		   = 08-12-2022
+Technology Used = HTML,JQuery
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mario Game</title>
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+
+	<style type="text/css">
+		.img_size{
+			width: 99%;
+			height: 600px;
+			position: absolute;
+		}
+		.mario{
+			width: 150px;
+			height: 150px;
+			position: relative;
+			top: 380px;
+
+		}
+	</style>
+</head>
+<body>
+
+	<!-- <button id="btn_move">Start</button> -->
+	<img src="https://art.pixilart.com/thumb/1aa616cf38f33fe.png" class="img_size">
+	<img src="https://static.wikia.nocookie.net/fantendo/images/9/94/Mario_and_Sonic_Tokyo_2020_Mario_artwork.png/revision/latest/scale-to-width-down/250?cb=20190614180140" class="mario" id="mario_boy">
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+				$("#mario_boy").animate({left:'5%'});	
+				$("#mario_boy").animate({top:'300px'});	
+				$("#mario_boy").animate({left:'240px'});
+				$("#mario_boy").animate({top:'200px'});
+				$("#mario_boy").animate({left:'440px'});
+				$("#mario_boy").animate({top:'110px'});
+				$("#mario_boy").animate({left:'640px'});
+				$("#mario_boy").animate({top:'10px'});
+				$("#mario_boy").animate({left:'840px'});
+				$("#mario_boy").animate({top:'-70px'});
+				$("#mario_boy").animate({left:'1080px'});
+				$("#mario_boy").fadeOut();
+
+
+		});
+	</script>
+
+</body>
+</html>

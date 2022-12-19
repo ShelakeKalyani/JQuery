@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+	<title>Salary Age</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var arr = [
+						{emp_name:'ABCD',salary:40000,Age:30},
+						{emp_name:'XYZ',salary:60000,Age:40},
+						{emp_name:'XYZ',salary:55000,Age:37},
+						{emp_name:'XYZ',salary:90000,Age:47},
+				  ];
+
+
+
+				  var obj_new = arr.filter(function(value){
+				  	if(value['salary']>50000 && value['Age']>38)
+				  	{
+				  		return true;
+				  	}
+				  });
+
+
+				  // for(let i=0;i<arr.length;i++)
+				  // {
+				  // 	if(arr[i]['salary']>50000 && arr[i]['Age']>38)
+				  // 	{
+				  // 		console.log(arr[i]);
+				  // 	}
+				  // }
+
+
+				  console.log(obj_new);
+	</script>
+
+</body>
+</html>
